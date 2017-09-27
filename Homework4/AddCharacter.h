@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddCharacter : UIViewController 
-
+@interface AddCharacter : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property long cellIdx;
+@property (strong, nonatomic) IBOutlet UIImageView *imgCharacter;
+@property (strong, nonatomic) IBOutlet UILabel *lblName;
+@property (strong, nonatomic) IBOutlet UILabel *lblDescription;
 
 
 @end

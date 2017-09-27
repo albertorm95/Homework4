@@ -8,12 +8,14 @@
 
 #import "Home.h"
 #import "cellMainTable.h"
+#import "AddCharacter.h"
 
 @interface Home ()
+
+@property long cellIdx;
 @property NSMutableArray *userNames;
 @property NSMutableArray *userAges;
 @property NSMutableArray *userImages;
-
 @end
 
 @implementation Home
@@ -32,9 +34,9 @@
 
 //-----------------------------------------------------------------------------------------
 -(void)initController {
-    self.userNames = [[NSMutableArray alloc] initWithObjects: @"Tyrion Lennister", @"Daenerys Targaryen", @"Gregor Clegane", @"Jon Snow", @"Cersei Lannister", nil];
-    self.userAges = [[NSMutableArray alloc] initWithObjects: @"38 años", @"27 años", @"34 años", @"29 años", @"40 años", nil];
-    self.userImages = [[NSMutableArray alloc] initWithObjects: @"Tyrion.jpg", @"Daenerys.jpg",@"Gregor.jpg",@"Jon.jpg",@"Cersei.jpg", nil];
+    _userNames = [[NSMutableArray alloc] initWithObjects: @"Tyrion Lennister", @"Daenerys Targaryen", @"Gregor Clegane", @"Jon Snow", @"Cersei Lannister", nil];
+    _userAges = [[NSMutableArray alloc] initWithObjects: @"38 años", @"27 años", @"34 años", @"29 años", @"40 años", nil];
+    _userImages = [[NSMutableArray alloc] initWithObjects: @"Tyrion.jpg", @"Daenerys.jpg",@"Gregor.jpg",@"Jon.jpg",@"Cersei.jpg", nil];
 }
 
 /******************************************************************************************/
@@ -46,7 +48,7 @@
 
 //-----------------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.userNames.count;
+    return _userNames.count;
 }
 //-----------------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,14 +64,21 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellMainTable"];
     }
     //Fill cell with info from arrays
-    cell.lblName.text       = self.userNames[indexPath.row];
-    cell.lblAge.text        = self.userAges[indexPath.row];
-    cell.imgUser.image      = [UIImage imageNamed:self.userImages[indexPath.row]];
+    cell.lblName.text       = _userNames[indexPath.row];
+    cell.lblAge.text        = _userAges[indexPath.row];
+    cell.imgUser.image      = [UIImage imageNamed:_userImages[indexPath.row]];
     
     return cell;
 }
 //-----------------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    self.cellIdx = indexPath.row;
+    [self performSegueWithIdentifier:@"Segue1" sender:self];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    AddCharacter * myVC = segue.destinationViewController;
+    myVC.cellIdx = self.cellIdx;
+}
+
 @end
