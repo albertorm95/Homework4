@@ -8,7 +8,7 @@
 
 #import "Home.h"
 #import "cellMainTable.h"
-#import "AddCharacter.h"
+#import "DetailedInfo.h"
 
 @interface Home ()
 
@@ -77,7 +77,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    AddCharacter * myVC = segue.destinationViewController;
+    DetailedInfo * myVC = segue.destinationViewController;
     myVC.cellIdx = self.cellIdx;
 }
 
