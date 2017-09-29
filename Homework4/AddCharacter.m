@@ -76,7 +76,7 @@
 - (IBAction)AddCharacter:(id)sender {
     [userNames addObject:_txtName.text];
     [userAges addObject: _txtAge.text];
-    [userImages addObject: @"Tyrion.jpg"];
+    [userImages addObject: _imgPhoto.image];
     [userDescription addObject: _txtDescription.text];
 }
 

@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.imgCharacter.image = [UIImage imageNamed:userImages[self.cellIdx]];
+    self.imgCharacter.image = userImages[self.cellIdx];
     self.lblName.text = userNames[self.cellIdx];
     self.txtDescription.text = userDescription[self.cellIdx];
 }
