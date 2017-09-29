@@ -9,9 +9,7 @@
 #import "AddCharacter.h"
 
 @interface AddCharacter ()
-@property NSMutableArray *userNames;
-@property NSMutableArray *userDesc;
-@property NSMutableArray *userImages;
+
 @end
 
 @implementation AddCharacter
@@ -20,6 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.imgPhoto.image = [UIImage imageNamed:@"Tyron.jpg"];
+    _imgPhoto.hidden = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
+    //_txtDescription.layer.cornerRadius=8.0f;
+    //_txtDescription.layer.masksToBounds=YES;
+    //_txtDescription.layer.borderColor=[[UIColor blackColor]CGColor];
     // Do any additional setup after loading the view.
 }
 
@@ -29,22 +36,15 @@
 }
 
 
-- (IBAction)SelectPhoto:(id)sender {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
-    [self presentViewController:picker animated:YES completion:NULL];
-    
-}
 
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imgPhoto.image = chosenImage;
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
-    
+
+    _imgPhoto.hidden = NO;
 }
 
 
@@ -63,5 +63,35 @@
 }
 */
 
+
+- (IBAction)SelectPhoto:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+- (IBAction)AddCharacter:(id)sender {
+    [userNames addObject:_txtName.text];
+    [userAges addObject: _txtAge.text];
+    [userImages addObject: @"Tyrion.jpg"];
+    [userDescription addObject: _txtDescription.text];
+}
+
+- (IBAction)NameEnd:(id)sender {
+    [[self view] endEditing:YES];
+}
+-(void)dismissKeyboard
+{
+    [_txtAge resignFirstResponder];
+    [_txtName resignFirstResponder];
+    [_txtDescription resignFirstResponder];
+}
+
+- (IBAction)AgeEnd:(id)sender {
+    [[self view] endEditing:YES];
+}
 
 @end

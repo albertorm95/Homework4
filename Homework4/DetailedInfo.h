@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Home.h"
 
 @interface DetailedInfo : UIViewController
 
