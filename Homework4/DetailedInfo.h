@@ -1,11 +1,3 @@
-//
-//  DetailedInfo.h
-//  Homework4
-//
-//  Created by Anronio Lizarraga on 9/27/17.
-//  Copyright © 2017 Antonio Lizarraga. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import "Home.h"
 

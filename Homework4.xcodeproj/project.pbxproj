@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5D3C8B1FA6710A00AE2D73 /* Joanna.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D3C851FA6710900AE2D73 /* Joanna.png */; };
+		3B5D3C8C1FA6710A00AE2D73 /* Elliot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D3C861FA6710900AE2D73 /* Elliot.jpg */; };
+		3B5D3C8D1FA6710A00AE2D73 /* Darlene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D3C871FA6710900AE2D73 /* Darlene.jpg */; };
+		3B5D3C8E1FA6710A00AE2D73 /* Tyrell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D3C881FA6710900AE2D73 /* Tyrell.jpg */; };
+		3B5D3C8F1FA6710A00AE2D73 /* Angela.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D3C891FA6710900AE2D73 /* Angela.jpg */; };
+		3B5D3C901FA6710A00AE2D73 /* Phillip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D3C8A1FA6710900AE2D73 /* Phillip.jpg */; };
 		CA17C5D01F7B5655005379B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA17C5CF1F7B5655005379B3 /* main.m */; };
 		CA17C5D31F7B5655005379B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA17C5D21F7B5655005379B3 /* AppDelegate.m */; };
 		CA17C5D61F7B5655005379B3 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = CA17C5D51F7B5655005379B3 /* Home.m */; };
@@ -14,11 +20,6 @@
 		CA17C5DC1F7B5655005379B3 /* Homework4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA17C5DA1F7B5655005379B3 /* Homework4.xcdatamodeld */; };
 		CA17C5DE1F7B5655005379B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5DD1F7B5655005379B3 /* Assets.xcassets */; };
 		CA17C5E11F7B5655005379B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5DF1F7B5655005379B3 /* LaunchScreen.storyboard */; };
-		CA17C5F31F7B585A005379B3 /* Cersei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5EE1F7B585A005379B3 /* Cersei.jpg */; };
-		CA17C5F41F7B585A005379B3 /* Daenerys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5EF1F7B585A005379B3 /* Daenerys.jpg */; };
-		CA17C5F51F7B585A005379B3 /* Gregor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5F01F7B585A005379B3 /* Gregor.jpg */; };
-		CA17C5F61F7B585A005379B3 /* Jon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5F11F7B585A005379B3 /* Jon.jpg */; };
-		CA17C5F71F7B585A005379B3 /* Tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5F21F7B585A005379B3 /* Tyrion.jpg */; };
 		CA17C5FC1F7B59C5005379B3 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = CA17C5FA1F7B59C5005379B3 /* cellMainTable.m */; };
 		CA17C5FD1F7B59C5005379B3 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA17C5FB1F7B59C5005379B3 /* cellMainTable.xib */; };
 		CA17C6291F7B651D005379B3 /* AddCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA17C6281F7B651D005379B3 /* AddCharacter.m */; };
@@ -26,7 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA17C5CB1F7B5655005379B3 /* Homework4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5D3C851FA6710900AE2D73 /* Joanna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joanna.png; sourceTree = "<group>"; };
+		3B5D3C861FA6710900AE2D73 /* Elliot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Elliot.jpg; sourceTree = "<group>"; };
+		3B5D3C871FA6710900AE2D73 /* Darlene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Darlene.jpg; sourceTree = "<group>"; };
+		3B5D3C881FA6710900AE2D73 /* Tyrell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tyrell.jpg; sourceTree = "<group>"; };
+		3B5D3C891FA6710900AE2D73 /* Angela.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Angela.jpg; sourceTree = "<group>"; };
+		3B5D3C8A1FA6710900AE2D73 /* Phillip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Phillip.jpg; sourceTree = "<group>"; };
+		CA17C5CB1F7B5655005379B3 /* mrrobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mrrobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA17C5CF1F7B5655005379B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA17C5D11F7B5655005379B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA17C5D21F7B5655005379B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,11 +44,6 @@
 		CA17C5DD1F7B5655005379B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA17C5E01F7B5655005379B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA17C5E21F7B5655005379B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA17C5EE1F7B585A005379B3 /* Cersei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cersei.jpg; sourceTree = "<group>"; };
-		CA17C5EF1F7B585A005379B3 /* Daenerys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Daenerys.jpg; sourceTree = "<group>"; };
-		CA17C5F01F7B585A005379B3 /* Gregor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gregor.jpg; sourceTree = "<group>"; };
-		CA17C5F11F7B585A005379B3 /* Jon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jon.jpg; sourceTree = "<group>"; };
-		CA17C5F21F7B585A005379B3 /* Tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tyrion.jpg; sourceTree = "<group>"; };
 		CA17C5F91F7B59C5005379B3 /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
 		CA17C5FA1F7B59C5005379B3 /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
 		CA17C5FB1F7B59C5005379B3 /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		CA17C5CC1F7B5655005379B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA17C5CB1F7B5655005379B3 /* Homework4.app */,
+				CA17C5CB1F7B5655005379B3 /* mrrobot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,11 +130,12 @@
 		CA17C5ED1F7B585A005379B3 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				CA17C5EE1F7B585A005379B3 /* Cersei.jpg */,
-				CA17C5EF1F7B585A005379B3 /* Daenerys.jpg */,
-				CA17C5F01F7B585A005379B3 /* Gregor.jpg */,
-				CA17C5F11F7B585A005379B3 /* Jon.jpg */,
-				CA17C5F21F7B585A005379B3 /* Tyrion.jpg */,
+				3B5D3C891FA6710900AE2D73 /* Angela.jpg */,
+				3B5D3C871FA6710900AE2D73 /* Darlene.jpg */,
+				3B5D3C861FA6710900AE2D73 /* Elliot.jpg */,
+				3B5D3C851FA6710900AE2D73 /* Joanna.png */,
+				3B5D3C8A1FA6710900AE2D73 /* Phillip.jpg */,
+				3B5D3C881FA6710900AE2D73 /* Tyrell.jpg */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -164,7 +167,7 @@
 			);
 			name = Homework4;
 			productName = Homework4;
-			productReference = CA17C5CB1F7B5655005379B3 /* Homework4.app */;
+			productReference = CA17C5CB1F7B5655005379B3 /* mrrobot.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,15 +208,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA17C5F31F7B585A005379B3 /* Cersei.jpg in Resources */,
+				3B5D3C8C1FA6710A00AE2D73 /* Elliot.jpg in Resources */,
 				CA17C5E11F7B5655005379B3 /* LaunchScreen.storyboard in Resources */,
+				3B5D3C8B1FA6710A00AE2D73 /* Joanna.png in Resources */,
 				CA17C5DE1F7B5655005379B3 /* Assets.xcassets in Resources */,
+				3B5D3C8F1FA6710A00AE2D73 /* Angela.jpg in Resources */,
+				3B5D3C8D1FA6710A00AE2D73 /* Darlene.jpg in Resources */,
 				CA17C5D91F7B5655005379B3 /* Main.storyboard in Resources */,
+				3B5D3C8E1FA6710A00AE2D73 /* Tyrell.jpg in Resources */,
 				CA17C5FD1F7B59C5005379B3 /* cellMainTable.xib in Resources */,
-				CA17C5F41F7B585A005379B3 /* Daenerys.jpg in Resources */,
-				CA17C5F51F7B585A005379B3 /* Gregor.jpg in Resources */,
-				CA17C5F71F7B585A005379B3 /* Tyrion.jpg in Resources */,
-				CA17C5F61F7B585A005379B3 /* Jon.jpg in Resources */,
+				3B5D3C901FA6710A00AE2D73 /* Phillip.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +368,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Homework4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.antoniolizarraga.Homework4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertorm95.mrrobot;
+				PRODUCT_NAME = mrrobot;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,8 +380,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Homework4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.antoniolizarraga.Homework4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertorm95.mrrobot;
+				PRODUCT_NAME = mrrobot;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

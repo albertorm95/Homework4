@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  Homework4
-//
-//  Created by Anronio Lizarraga on 9/26/17.
-//  Copyright © 2017 Antonio Lizarraga. All rights reserved.
-//
-
 #import "Home.h"
 #import "cellMainTable.h"
 #import "DetailedInfo.h"
@@ -42,10 +34,10 @@ unsigned char FirstTime = 0;
 
 //-----------------------------------------------------------------------------------------
 -(void)initController {
-    userNames = [[NSMutableArray alloc] initWithObjects: @"Tyrion Lennister", @"Daenerys Targaryen", @"Gregor Clegane", @"Jon Snow", @"Cersei Lannister", nil];
-    userAges = [[NSMutableArray alloc] initWithObjects: @"38", @"27", @"34", @"29", @"40", nil];
-    userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"Tyrion.jpg"], [UIImage imageNamed:@"Daenerys.jpg"],[UIImage imageNamed:@"Gregor.jpg"],[UIImage imageNamed:@"Jon.jpg"],[UIImage imageNamed:@"Cersei.jpg"], nil];
-    userDescription = [[NSMutableArray alloc] initWithObjects: @"Es el tercer hijo de Lord Tywin LAnnister y Lady Joanna Lannister, y hermano menor delos gemelos Cersei y Jaime. Es apodado el Gnomo y Mediohombre debido a su enanismo", @"Es la hija menor del rey Aerys II Targaryen y su hermana esposa, la reina Rhaella. Luego de la Guerra del Usurpador, durante la que urieron sus padres y su hermano mayor Rhaegar, ella y su hermano Viserys vivieron en el exilio en varias ciudades libres.", @"Apodado LA montaña que Cabalga o simplemente la Montaña, fue cabeza de la Casa Clegane y vasallo de la Casa Lannister. Es conocido por su estatura, crueldad y poderio en batalla", @"Es el Lord Comandante de la Guardia de la Noche n 998. Es hijo bastardo de Lord Eddard Stark. Su lobo huargo, Fantasma, es albino y mudo.", @"Es la hija mayor de Lord Tywin Lannister y Lady Joanna Lannister. Tiene dos hermanos, su mellizo Jaime y su hermano menor Tyrion. Tras la Guerra del Usurpador se casò con el nuevo rey, Robert Baratheon y se convirtiò en Reina de los Siete Reinos.", nil];
+    userNames = [[NSMutableArray alloc] initWithObjects: @"Elliot Alderson", @"Tyrell Wellick", @"Angela Moss", @"Phillip Price", @"Joanna Wellick", nil];
+    userAges = [[NSMutableArray alloc] initWithObjects: @"31", @"35", @"29", @"?", @"30", nil];
+    userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"Elliot.jpg"], [UIImage imageNamed:@"Tyrell.jpg"],[UIImage imageNamed:@"Angela.jpg"],[UIImage imageNamed:@"Phillip.jpg"],[UIImage imageNamed:@"Joanna.png"], nil];
+    userDescription = [[NSMutableArray alloc] initWithObjects: @"But I'm only a vigilante hacker by night. By day, just a regular cybersecurity engineer. Employee number ER28-0652", @"Power belongs to the people that take it. Nothing to do with their hard work, strong ambitions, or rightful qualifications, no. The actual will to take is often the only thing that's necessary.", @" have an idea that will change the world. I know it sounds really stupid, but I know how to do it. I think it could actually work.", @"In my life, as I was making my way, I always asked the question, 'Am I the most powerful person in the room?' And the answer needed to be 'Yes'.", @"Of all the gifts you've been sending me, I've gotta say -- this one got me the wettest.", nil];
 }
 
 /******************************************************************************************/
